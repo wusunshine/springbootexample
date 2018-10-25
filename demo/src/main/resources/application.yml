@@ -1,0 +1,14 @@
+server:
+  port: 8128
+  session:
+    timeout: 60
+
+spring:
+  sessionpoolconfig:
+    corePoolSize: 20
+    maxPoolSize: 60
+    queueCapacity: 300
+    keepaliveSeconds: 50
+  redis:
+    cluster:
+      nodes: 127.0.0.1:6378, 127.0.0.1:6379
